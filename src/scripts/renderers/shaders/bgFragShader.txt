@@ -3,9 +3,9 @@ varying vec3 vNormal;
 uniform float delta;
 
 void main() {
-	float r = 0.0;
-	float g = 0.7;
-	float b = 1.0;
+	float r = delta / 2.0;
+	float g = vUv.x + (delta / 4.0);
+	float b = vUv.x + vUv.y + delta;
 	float a = 1.0;
 	gl_FragColor = vec4(r, g, b, a);
 }

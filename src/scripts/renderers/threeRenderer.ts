@@ -104,6 +104,7 @@ export default class ThreeRenderer implements BaseRenderer{
         tl = gsap.timeline({
             delay: 0.1,             // delay to capture first frame
             repeat: window.DEBUG ? -1 : 0, // if debug repeat forever
+            //repeatDelay: 1,
             paused: window.THUMBNAIL,
             onComplete: () => this.handleComplete()
         });
@@ -131,7 +132,7 @@ export default class ThreeRenderer implements BaseRenderer{
             }, 0);
         }
         
-        /*
+        
         tl.to(this.bg.material.uniforms.delta, {
             value: 1, 
             duration: 5,
@@ -142,7 +143,7 @@ export default class ThreeRenderer implements BaseRenderer{
             duration: 5,
             ease: 'power1.out'
         }, 5);
-        */
+        
 
         // END TIMELINE
 
