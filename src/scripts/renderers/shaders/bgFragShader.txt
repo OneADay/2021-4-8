@@ -1,0 +1,11 @@
+varying vec2 vUv;
+varying vec3 vNormal;
+uniform float delta;
+
+void main() {
+	float r = 0.0;
+	float g = 0.7;
+	float b = 1.0;
+	float a = 1.0;
+	gl_FragColor = vec4(r, g, b, a);
+}
